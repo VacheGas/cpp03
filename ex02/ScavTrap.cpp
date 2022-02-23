@@ -32,6 +32,11 @@ ScavTrap::ScavTrap(const ClapTrap &copy) : ClapTrap(copy)
 	return (*this);
 }
 
+void ScavTrap::attack(std::string const & target)
+{
+	std::cout << this->Name <<" attack to (" << target << this->Attack_damage << ")(ScavTrap)"<< std::endl;
+}
+
 void ScavTrap::guardGate()
 {
 	std::cout<<"ScavTrap have enterred in Gate keeper mode"<<std::endl;

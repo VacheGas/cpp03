@@ -9,4 +9,5 @@ public:
     ScavTrap(const ClapTrap &copy);
     ScavTrap &operator=(const ScavTrap &equal);
 	void    guardGate();
+    void    attack(std::string const & target);
 };
