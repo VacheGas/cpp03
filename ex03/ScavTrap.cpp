@@ -39,5 +39,5 @@ void ScavTrap::guardGate()
 
 void ScavTrap::attack(std::string const & target)
 {
-	std::cout << this->Name <<" attack to (" << target << this->Attack_damage << " ScavTrap)"<< std::endl;
+	std::cout<<"ScavTrap " << this->Name <<" attack to (" << target << this->Attack_damage << " ScavTrap)"<< std::endl;
 }

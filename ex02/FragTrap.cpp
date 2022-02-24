@@ -36,3 +36,8 @@ void FragTrap::highFivesGuys()
 {
 	std::cout<<"positive high fives request(FragTrap)"<<std::endl;
 }
+
+void FragTrap::attack(std::string const & target)
+{
+	std::cout<<"FragTrap " << this->Name <<" attack to (" << target << this->Attack_damage << " ScavTrap)"<< std::endl;
+}

@@ -9,4 +9,5 @@ public:
     FragTrap(const ClapTrap &copy);
     FragTrap &operator=(const FragTrap &equal);
 	void    highFivesGuys();
+    void attack(std::string const & target);
 };

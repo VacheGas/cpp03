@@ -37,7 +37,7 @@ ClapTrap::~ClapTrap()
 
 void ClapTrap::attack(const std::string & target)
 {
-	std::cout << this->Name <<" attack to (" << target << this->Attack_damage << " ClarTrap)"<< std::endl;
+	std::cout<<"ClapTrap "<< this->Name <<" attack to (" << target << this->Attack_damage << " ClarTrap)"<< std::endl;
 }
 
 void ClapTrap::takeDamage(unsigned int amount)

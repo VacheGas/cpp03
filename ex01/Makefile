@@ -1,6 +1,6 @@
 NAME = ex01
 
-CXX = clang++
+CXX = c++
 
 SRCS =	$(wildcard *.cpp)
 

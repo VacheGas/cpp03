@@ -6,6 +6,8 @@ int main()
     DiamondTrap b("aram");
     DiamondTrap z(b);
     DiamondTrap e;
+    FragTrap u("zz");
+    ScavTrap ii("ww");
    e = z;
    a.attack("asd");
     a.attack(b.get_name());
@@ -14,5 +16,7 @@ int main()
     z.takeDamage(42);
     z.highFivesGuys();
     b.attack("aramik");
+    ii.attack("ww");
+    u.attack("ee");
     b.whoI();
 }
