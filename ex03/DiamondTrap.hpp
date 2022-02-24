@@ -9,7 +9,7 @@ private:
     
 public:
     DiamondTrap(/* args */);
-    ~DiamondTrap();
+    virtual ~DiamondTrap();
     DiamondTrap(std::string const & new_Name);
 	DiamondTrap(const DiamondTrap &copy);
 	DiamondTrap &operator=(const DiamondTrap &equal);

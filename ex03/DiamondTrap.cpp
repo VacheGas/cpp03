@@ -31,7 +31,6 @@ DiamondTrap &DiamondTrap::operator=(const DiamondTrap &equal)
 DiamondTrap::DiamondTrap(const DiamondTrap &copy)
 {
     std::cout << "copy constructors running(DiamondTrap)"<<std::endl;
-	std::cout << "copy constructors running"<<std::endl;
 	this->Attack_damage = copy.Attack_damage;
 	this->Energy_point = copy.Energy_point;
 	this->Hitpoints = copy.Hitpoints;

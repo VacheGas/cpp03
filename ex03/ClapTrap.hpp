@@ -14,7 +14,7 @@ class  ClapTrap
 		ClapTrap( int en_point, int new_hit, int new_damage);
 	public:
 		ClapTrap();
-		~ClapTrap();
+		virtual ~ClapTrap();
 		ClapTrap(const std::string &new_Name);
 		ClapTrap(const ClapTrap &copy);
 		ClapTrap &operator=(const ClapTrap &equal);
