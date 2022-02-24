@@ -9,14 +9,14 @@ void ClapTrap::def_set(int en_point, int new_hit, int new_damage)
 
 ClapTrap::ClapTrap(const std::string &new_Name)
 {
-    std::cout << "constructors running"<<std::endl;
+    std::cout << "constructors running(ClapTrap)"<<std::endl;
 	this->def_set(10, 10, 0);
     this->Name.assign(new_Name);
 }
 
 ClapTrap::ClapTrap(const ClapTrap &copy)
 {
-	 std::cout << "copy constructors running"<<std::endl;
+	 std::cout << "copy constructors running(ClapTrap)"<<std::endl;
 	this->Attack_damage = copy.Attack_damage;
 	this->Energy_point = copy.Energy_point;
 	this->Hitpoints = copy.Hitpoints;
@@ -27,14 +27,14 @@ ClapTrap::ClapTrap(const ClapTrap &copy)
 
 ClapTrap::ClapTrap()
 {
-    std::cout << "default constructors running"<<std::endl;
+    std::cout << "default constructors running(ClapTrap)"<<std::endl;
 	this->Name.assign("ananun");
     this->def_set(10, 10, 0);
 }
 
 ClapTrap::~ClapTrap()
 {
-    std::cout << "default desstructors running"<<std::endl;
+    std::cout << "default desstructors running(ClapTrap)"<<std::endl;
 }
 
 void ClapTrap::attack(std::string const & target)
@@ -56,7 +56,7 @@ void ClapTrap::beRepaired(unsigned int amount)
 
 ClapTrap &ClapTrap::operator=(const ClapTrap &equal)
 {
-	std::cout<<"Assignation operator called"<<std::endl;
+	std::cout<<"Assignation operator called(ClapTrap)"<<std::endl;
 	if(this == &equal)
 		return (*this);
 	this->Name.assign(equal.Name);
@@ -68,7 +68,7 @@ ClapTrap &ClapTrap::operator=(const ClapTrap &equal)
 
 ClapTrap::ClapTrap(const std::string &new_Name, int en_point, int new_hit, int new_damage)
 {
-	std::cout << "Inheritance class running" << std::endl;
+	std::cout << "Inheritance class running(ClapTrap)" << std::endl;
 	Name.assign(new_Name);
 	def_set(en_point, new_hit, new_damage);
 }
@@ -95,6 +95,7 @@ int ClapTrap::get_Energy_point()
 
 ClapTrap::ClapTrap(int en_point, int new_hit, int new_damage)
 {
+	std::cout<<"Inheritance class running(ClapTrap)"<< std::endl;
 	this->def_set(en_point, new_hit, new_damage);
 	this->Name.assign("ananun");
 }

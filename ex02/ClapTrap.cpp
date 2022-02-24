@@ -91,6 +91,7 @@ int ClapTrap::get_Energy_point()
 
 ClapTrap::ClapTrap(int en_point, int new_hit, int new_damage)
 {
+	std::cout<<"Inheritance class running(ClapTrap)"<< std::endl;
 	this->def_set(en_point, new_hit, new_damage);
 	this->Name.assign("ananun");
 }

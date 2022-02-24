@@ -10,7 +10,7 @@ ScavTrap::ScavTrap(const std::string& new_Name) : ClapTrap(new_Name, 100, 50, 20
     std::cout << "constructors running(ScavTrap)"<<std::endl;
 }
 
-ScavTrap::ScavTrap(const ClapTrap &copy) : ClapTrap(copy)
+ScavTrap::ScavTrap(const ScavTrap &copy) : ClapTrap(copy)
 {
     std::cout << "copy constructors running(ScavTrap)"<<std::endl;
 }

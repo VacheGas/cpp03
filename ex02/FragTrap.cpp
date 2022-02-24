@@ -10,7 +10,7 @@ FragTrap::FragTrap(const std::string& new_Name) : ClapTrap(new_Name, 100, 100, 3
     std::cout << "constructors running(FragTrap)"<<std::endl;
 }
 
-FragTrap::FragTrap(const ClapTrap &copy) : ClapTrap(copy)
+FragTrap::FragTrap(const FragTrap &copy) : ClapTrap(copy)
 {
     std::cout << "copy constructors running(FragTrap)"<<std::endl;
 }

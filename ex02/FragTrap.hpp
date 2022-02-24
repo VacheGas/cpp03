@@ -6,7 +6,7 @@ public:
     FragTrap();
     ~FragTrap();
     FragTrap(const std::string& new_Name);
-    FragTrap(const ClapTrap &copy);
+    FragTrap(const FragTrap &copy);
     FragTrap &operator=(const FragTrap &equal);
 	void    highFivesGuys();
     void attack(std::string const & target);
